@@ -1,0 +1,45 @@
+Analysis initiated from SIMULIA established products
+Abaqus JOB 10x10x10_tension_Y_pbc_singleCrystal
+Abaqus 3DEXPERIENCE R2018x
+Abaqus License Manager checked out the following licenses:
+Abaqus/Standard checked out 5 tokens from Flexnet server license.software.wisc.edu.
+<126 out of 200 licenses remain available>.
+Begin Compiling Abaqus/Standard User Subroutines
+Thu May 26 11:43:06 2022
+Intel(R) Fortran Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 16.0.8.266 Build 20180409
+Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
+
+ Intel(R) Fortran 16.0-1646
+End Compiling Abaqus/Standard User Subroutines
+Begin Linking Abaqus/Standard User Subroutines
+Intel(R) Fortran Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 16.0.8.266 Build 20180409
+Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
+
+GNU ld (GNU Binutils for Ubuntu) 2.34
+End Linking Abaqus/Standard User Subroutines
+Thu May 26 11:43:10 2022
+Begin Analysis Input File Processor
+Thu May 26 11:43:10 2022
+Run pre
+Thu May 26 11:43:12 2022
+End Analysis Input File Processor
+Begin Abaqus/Standard Analysis
+Thu May 26 11:43:12 2022
+Run standard
+*** buffer overflow detected ***: terminated
+Thu May 26 11:43:14 2022
+Abaqus Error: The executable standard
+aborted with system error "Abnormal termination signal" (signal 6).
+Please check the .dat, .msg, and .sta files for error messages if the files
+exist.  If there are no error messages and you cannot resolve the problem,
+please run the command "abaqus job=support information=support" to report and
+save your system information.  Use the same command to run Abaqus that you
+used when the problem occurred.  Please contact your local Abaqus support
+office and send them the input file, the file support.log which you just
+created, the executable name, and the error code.
+Begin Convert MFS to SFS
+Thu May 26 11:43:15 2022
+Run SMASimUtility
+Thu May 26 11:43:15 2022
+End Convert MFS to SFS
+Abaqus/Analysis exited with errors

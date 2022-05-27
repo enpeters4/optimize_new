@@ -1,0 +1,219 @@
+1
+
+   Abaqus 3DEXPERIENCE R2018x                                  Date 26-May-2022   Time 11:43:11
+   For use by UNIVERSITY OF WISCONSIN SYSTEM under license from Dassault Systemes or its subsidiary.
+
+
+
+                         The Abaqus Software is a product of:
+
+                           Dassault Systemes SIMULIA Corp.
+                           1301 Atwood Avenue, Suite 101W
+                              Johnston, RI 02919, USA
+ 
+
+
+                   The Abaqus Software is available only under license
+                   from Dassault Systemes or its subsidiary and may be
+                   used or reproduced only in accordance with the terms
+                   of such license.
+ 
+                          On machine CAB-linux1 
+                          you are authorized to run
+                          Abaqus/Standard until 31-Aug-2022
+
+                          Your site id is: 200000000004499 
+
+
+ 
+                    For assistance or any other information you may
+                    obtain contact information for your local office
+                    from the world wide web at:
+
+                      http://www.3ds.com/products/simulia/locations/
+
+ 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                *                                                         * 
+                *                   *****************                     * 
+                *                   *  N O T I C E  *                     * 
+                *                   *****************                     * 
+                *                                                         * 
+                *                                                         * 
+                *               Abaqus 3DEXPERIENCE R2018x                * 
+                *                                                         * 
+                *          BUILD ID: 2017_11_07-11.21.41 127140           * 
+                *                                                         * 
+                *                                                         * 
+                *  Please make sure you are using                         * 
+                *  release 3DEXPERIENCE R2018x manuals                    * 
+                *  plus the notes accompanying this release.              * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *   This program may not be used for commercial purposes  * 
+                *           without payment of a commercial fee.          * 
+                *                                                         * 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+ 
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *node, nset=allnodes
+  *element, type=c3d8, elset=allelems
+  *nset, nset=v1
+  *nset, nset=v2
+  *nset, nset=v3
+  *nset, nset=v4
+  *nset, nset=v5
+  *nset, nset=v6
+  *nset, nset=v7
+  *nset, nset=v8
+  *nset, nset=e1, generate
+  *nset, nset=e2, generate
+  *nset, nset=e3, generate
+  *nset, nset=e4, generate
+  *nset, nset=e5, generate
+  *nset, nset=e6, generate
+  *nset, nset=e7, generate
+  *nset, nset=e8, generate
+  *nset, nset=e9, generate
+  *nset, nset=e10, generate
+  *nset, nset=e11, generate
+  *nset, nset=e12, generate
+  *nset, nset=f1
+  *nset, nset=f3
+  *nset, nset=f2
+  *nset, nset=f4
+  *nset, nset=f5
+  *nset, nset=f6
+  *MATERIAL,NAME=Inconal625
+  *USER MATERIAL,CONSTANTS=59,TYPE=MECHANICAL
+  *DEPVAR
+  *SOLID SECTION,ELSET=allelems ,MATERIAL=Inconal625
+  *SOLID SECTION,ELSET=allelems ,MATERIAL=Inconal625
+  *BOUNDARY
+  *BOUNDARY
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *OUTPUT,FIELD,time interval=0.1
+  *OUTPUT,HISTORY,FREQUENCY=1,VARIABLE=PRESELECT
+  *ELEMENT OUTPUT,ELSET=allelems,POSITION=INTEGRATION POINTS,VARIABLE=PRESELECT
+  *OUTPUT,FIELD,time interval=0.1
+  *OUTPUT,HISTORY,FREQUENCY=1,VARIABLE=PRESELECT
+  *ELEMENT OUTPUT,ELSET=allelems,POSITION=INTEGRATION POINTS,VARIABLE=PRESELECT
+  *OUTPUT,FIELD,time interval=0.1
+  *OUTPUT,HISTORY,FREQUENCY=1,VARIABLE=PRESELECT
+  *ELEMENT OUTPUT,ELSET=allelems,POSITION=INTEGRATION POINTS,VARIABLE=PRESELECT
+  *STEP,AMPLITUDE=RAMP,NLGEOM,INC=70000
+  *OUTPUT,FIELD,time interval=0.1
+  *OUTPUT,HISTORY,FREQUENCY=1,VARIABLE=PRESELECT
+  *STEP,AMPLITUDE=RAMP,NLGEOM,INC=70000
+  *STEP,AMPLITUDE=RAMP,NLGEOM,INC=70000
+  *STATIC
+  *CONTROLS,PARAMETER=TIME INCREMENTATION
+  *BOUNDARY
+  *OUTPUT,FIELD,time interval=0.1
+  *ELEMENT OUTPUT,ELSET=allelems,POSITION=INTEGRATION POINTS,VARIABLE=PRESELECT
+  *NODE OUTPUT,NSET=ALLNODES,VARIABLE=PRESELECT
+  *OUTPUT,HISTORY,FREQUENCY=1,VARIABLE=PRESELECT
+  *NODE OUTPUT,NSET=v4,VARIABLE=PRESELECT
+  *END STEP
+
+ ***WARNING: OUTPUT AT EXACT, PREDEFINED TIME POINTS WAS REQUESTED IN THIS 
+             STEP. IN ORDER TO WRITE OUTPUT AT EXACT TIME POINTS SPECIFIED, 
+             Abaqus MIGHT USE TIME INCREMENTS SMALLER THAN THE MINIMUM TIME 
+             INCREMENT ALLOWED IN THE STEP. IN ADDITION, THE NUMBER OF 
+             INCREMENTS REQUIRED TO COMPLETE THE STEP WILL IN GENERAL INCREASE.
+  *STEP,AMPLITUDE=RAMP,NLGEOM,INC=70000
+  *STATIC
+  *BOUNDARY
+  *END STEP
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                  1000
+          NUMBER OF NODES IS                                     1331
+          NUMBER OF NODES DEFINED BY THE USER                    1331
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                 3993
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =  0.14000    
+       SYSTEM TIME (SEC)    =  2.00000E-02
+       TOTAL CPU TIME (SEC) =  0.16000    
+       WALLCLOCK TIME (SEC) =          0
